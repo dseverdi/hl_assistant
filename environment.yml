@@ -1,6 +1,13 @@
 name: WatsonLogger
-channels:
-  - conda-forge
+
 dependencies:
-  - pandas
+  - ibm_watson
+  - ibm_cloud_sdk_core
+  - pip
+  - pip:
+    # works for regular pip packages
+    - pandas
+    - ibm_watson
+    - ibm_cloud_sdk_core
+  
  
