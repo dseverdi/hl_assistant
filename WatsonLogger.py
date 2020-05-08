@@ -72,7 +72,8 @@ class WatsonLogger:
             row['request time']     = data_records['request_timestamp']
             row['response time']    = data_records['response_timestamp']
             row['user input']       = data_records['request']['input']['text']
-            row['output']           = " ".join(data_records['response']['output']['text'])
+            row['output']           = data_records['response']['output']['text'][0] if len(data_records['response']['output']['text']) > 0 else ''
+            
 
             # add to list
             rows.append(row)
