@@ -1,8 +1,5 @@
 name: WatsonLogger
-
-dependencies:
-  - ibm_watson
-  - ibm_cloud_sdk_core
+dependencies:  
   - pip
   - pip:
     # works for regular pip packages
